@@ -1,0 +1,6 @@
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\XGame.Domain.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\XGame.Domain.pdb
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csprojAssemblyReference.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.CoreCompileInputs.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.pdb
