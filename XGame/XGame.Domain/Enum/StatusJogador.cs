@@ -8,7 +8,7 @@ namespace XGame.Domain.Enum
 {
     public enum StatusJogador
     {
-        EmAndamento,
+        EmAnalise,
         Ativo,
         Bloqueado
         
