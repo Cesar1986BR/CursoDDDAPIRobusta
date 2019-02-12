@@ -97,13 +97,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arguments\Base\RepositoryBase.cs" />
     <Compile Include="Arguments\Jogador\AddJogadorRequest.cs" />
     <Compile Include="Arguments\Jogador\AddJogadorResponse.cs" />
     <Compile Include="Arguments\Jogador\AutenticarJogadorRequest.cs" />
     <Compile Include="Arguments\Jogador\AutenticarJogadorResponse.cs" />
+    <Compile Include="Arguments\Jogador\GetJogadorByIDRequest.cs" />
+    <Compile Include="Arguments\Jogador\GetJogadorByIDResponse.cs" />
     <Compile Include="Arguments\Jogador\JogadorResponse.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaResponse.cs" />
+    <Compile Include="Entities\Base\EntityBase.cs" />
     <Compile Include="Entities\Jogador.cs" />
     <Compile Include="Entities\Jogo.cs" />
     <Compile Include="Entities\JogoPlataforma.cs" />
@@ -113,6 +117,7 @@
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Interface\Arguments\IResponse.cs" />
     <Compile Include="Interface\Arguments\IRequest.cs" />
+    <Compile Include="Interface\Repositories\Base\IRepositoryBase.cs" />
     <Compile Include="Interface\Repositories\IRepositoryJogador.cs" />
     <Compile Include="Arguments\Jogador\AlterarRequest.cs" />
     <Compile Include="Arguments\Jogador\AlterarResponse.cs" />

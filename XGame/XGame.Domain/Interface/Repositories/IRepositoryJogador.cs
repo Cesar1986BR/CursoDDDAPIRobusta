@@ -5,17 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
+using XGame.Domain.Interface.Repositories.Base;
 
 namespace XGame.Domain.Interface.Repositories
 {
-    public interface IRepositoryJogador
+    public interface IRepositoryJogador :IRepositoryBase<Jogador,Guid>
     {
-        Jogador Autenticar(string email, string senha);
-        Jogador AddJogador(Jogador request);
+       // Jogador Autenticar(string email, string senha);
 
-        IEnumerable<Jogador> ListaJogador();
-
-        Jogador GetJogadorById(Guid Id);
-        Jogador AlterarJogador(Jogador jogador);
     }
 }
