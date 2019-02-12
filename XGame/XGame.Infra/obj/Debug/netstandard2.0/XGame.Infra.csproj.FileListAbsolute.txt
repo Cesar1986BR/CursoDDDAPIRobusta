@@ -1,0 +1,15 @@
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Infra.deps.json
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Infra.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.csprojAssemblyReference.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.csproj.CoreCompileInputs.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.AssemblyInfoInputs.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.AssemblyInfo.cs
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Infra.pdb
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Domain.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\prmToolkit.NotificationPattern.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Domain.pdb
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\XGame.Domain.dll.config
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\bin\Debug\netstandard2.0\en-US\prmToolkit.NotificationPattern.resources.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.csproj.CopyComplete
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra\obj\Debug\netstandard2.0\XGame.Infra.pdb
