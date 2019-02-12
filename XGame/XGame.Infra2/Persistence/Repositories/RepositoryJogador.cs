@@ -12,7 +12,6 @@ namespace XGame.Infra2.Persistence.Repositories
 {
     public class RepositoryJogador : RepositoryBase<Jogador,Guid>, IRepositoryJogador
     {
-
         protected readonly XGameContext _context;
 
         public RepositoryJogador(XGameContext context):base(context)
