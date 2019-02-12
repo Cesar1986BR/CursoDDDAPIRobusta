@@ -41,7 +41,7 @@ namespace XGame.Domain.Entities
             AddNotifications(nome, email);
         }
 
-        public Guid ID { get; private set; }
+      //  public Guid ID { get; private set; }
         public Nome Nome { get; set; }
 
         public Email Email { get; private set; }
