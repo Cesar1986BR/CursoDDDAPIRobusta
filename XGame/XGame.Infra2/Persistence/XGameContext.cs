@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Text;
 using XGame.Domain.Entities;
 
-namespace XGame.Infra.Persistence
+namespace XGame.Infra2.Persistence
 {
     public class XGameContext :DbContext
     {

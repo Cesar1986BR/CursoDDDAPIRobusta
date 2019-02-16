@@ -33,12 +33,20 @@ namespace XGame.Domain.Services
 
             Jogador jogador = new Jogador(nome, email, request.Senha);
 
+            AddNotifications(nome, email);
+
+            if (_repositoryJogador.Existe(x => x.Email.EmailEndereco == request.Email))
+            {
+                AddNotification("E-mail", "Email informado ja está em uso.");
+            }
 
             if (this.IsInvalid())
             {
                 return null;
             }
+
             jogador = _repositoryJogador.Adicionar(jogador);
+
 
             return (AddJogadorResponse)jogador;
         }

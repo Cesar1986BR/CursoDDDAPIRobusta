@@ -9,12 +9,16 @@ namespace XGame.Domain.Entities
 {
     public class Jogador : EntityBase
     {
+        public Jogador()
+        {
+
+        }
 
         public Jogador(Email email, string senha)
         {
             Email = email;
             Senha = senha;
-            new AddNotifications<Jogador>(this).IfNullOrInvalidLength(x=>Senha,6,32,"Senah esta fora do padrão.");
+            new AddNotifications<Jogador>(this).IfNullOrInvalidLength(x=>Senha,6,32,"Senha esta fora do padrão.");
             if (IsValid())
             {
                 Senha = Senha.ConvertToMD5();

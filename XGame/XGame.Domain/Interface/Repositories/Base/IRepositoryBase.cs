@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace XGame.Domain.Interface.Repositories.Base
 {
-    public interface IRepositoryBase<TEntidade, TId> where TEntidade : class where TId : struct 
+    public interface IRepositoryBase<TEntidade, TId>
+       where TEntidade : class
+       where TId : struct
     {
         IQueryable<TEntidade> ListarPor(Expression<Func<TEntidade, bool>> where, params Expression<Func<TEntidade, object>>[] includeProperties);
 
