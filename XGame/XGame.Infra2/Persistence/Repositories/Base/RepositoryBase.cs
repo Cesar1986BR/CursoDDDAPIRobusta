@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using XGame.Domain.Entities.Base;
 using XGame.Domain.Interface.Repositories.Base;
 
@@ -40,14 +38,14 @@ namespace XGame.Infra2.Persistence.Repositories.Base
 
         public TEntidade ObterPorId(TId id, params Expression<Func<TEntidade, object>>[] includeProperties)
         {
-            //if (includeProperties.Any())
-            //{
-            //    return Listar(includeProperties).FirstOrDefault(x => x.ID.ToString() == id.ToString());
-            //}
+            if (includeProperties.Any())
+            {
+                return Listar(includeProperties).FirstOrDefault(x => x.ID.ToString() == id.ToString());
+            }
 
-            //return _context.Set<TEntidade>().Find(id);
+            return _context.Set<TEntidade>().Find(id);
 
-            return null;
+      
         }
 
         public IQueryable<TEntidade> Listar(params Expression<Func<TEntidade, object>>[] includeProperties)

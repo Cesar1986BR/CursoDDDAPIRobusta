@@ -1,6 +1,4 @@
 ﻿using System;
-using XGame.Domain.Entities;
-using XGame.Domain.ValueObjects;
 
 namespace XGame.Domain.Interface.Servico
 {
@@ -12,7 +10,7 @@ namespace XGame.Domain.Interface.Servico
         public string Mesage { get; set; }
         public string Email { get; private set; }
 
-        public static explicit operator AlterarResponse(Jogador jogador)
+        public static explicit operator AlterarResponse(Entities.Jogador jogador)
         {
 
             return new AlterarResponse

@@ -1,26 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using XGame.Domain.Interface.Arguments;
-
 namespace XGame.Domain.Arguments.Jogador
 {
     public class AutenticarJogadorResponse
     {
 
+        public Guid Id { get; set; }
+
         public string PrimeiroNome { get; set; }
+
         public string Email { get; set; }
+
         public int Status { get; set; }
 
-        public static explicit operator AutenticarJogadorResponse(Entities.Jogador jogador)
+        public static explicit operator AutenticarJogadorResponse(Entities.Jogador entidade)
         {
-            return new AutenticarJogadorResponse
+            return new AutenticarJogadorResponse()
             {
-                Email = jogador.Email.EmailEndereco,
-                PrimeiroNome = jogador.Nome.PrimeiroNome,
-                Status = (int)jogador.Status
+                Id = entidade.ID,
+                Email = entidade.Email.EmailEndereco,
+                PrimeiroNome = entidade.Nome.PrimeiroNome,
+                Status = (int)entidade.Status
             };
         }
     }
