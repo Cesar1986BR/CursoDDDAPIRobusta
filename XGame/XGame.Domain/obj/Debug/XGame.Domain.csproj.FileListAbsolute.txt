@@ -21,8 +21,8 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\System.Security.Crypto
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\System.Xml.ReaderWriter.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\bin\Debug\en-US\prmToolkit.NotificationPattern.resources.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csprojAssemblyReference.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.CoreCompileInputs.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.CopyComplete
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.pdb
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Domain\obj\Debug\XGame.Domain.csprojAssemblyReference.cache

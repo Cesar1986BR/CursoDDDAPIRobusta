@@ -12,7 +12,7 @@ namespace XGame.AppConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Inciianlizando...");
+
 
             var servico = new ServiceJogador();
 
