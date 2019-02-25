@@ -114,6 +114,9 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\EntityFramework.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\EntityFramework.SqlServer.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Owin.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Owin.Security.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Newtonsoft.Json.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Owin.dll
@@ -138,8 +141,6 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Security.Cryptogra
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.ValueTuple.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Web.Http.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Xml.ReaderWriter.dll
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Unity.Abstractions.dll
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Unity.Container.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\XGame.Domain.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\XGame.Infra2.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\XGame.Domain.pdb
@@ -150,6 +151,9 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\EntityFramework.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\EntityFramework.SqlServer.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Owin.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Owin.Security.xml
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Newtonsoft.Json.pdb
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Newtonsoft.Json.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Diagnostics.DiagnosticSource.xml
@@ -157,8 +161,6 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Net.Http.Formattin
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.ValueTuple.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\System.Web.Http.xml
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Unity.Abstractions.pdb
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\Unity.Container.pdb
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\bin\Debug\en-US\prmToolkit.NotificationPattern.resources.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\obj\Debug\XGame.IoC.csprojAssemblyReference.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.IoC\obj\Debug\XGame.IoC.csproj.CoreCompileInputs.cache

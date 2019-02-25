@@ -36,6 +36,7 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\bin\Debug\en-US\prmToolkit.Notif
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csprojAssemblyReference.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.CriaTabelaJogador.resources
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.CriaTabePlataforma.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.TabelaJogador.resources
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.GenerateResource.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.CoreCompileInputs.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.CopyComplete
