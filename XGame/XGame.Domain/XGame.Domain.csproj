@@ -138,8 +138,8 @@
     <Compile Include="Arguments\Jogo\AdicionarJogoResponse.cs" />
     <Compile Include="Arguments\Jogo\AdicionarJogoRequest.cs" />
     <Compile Include="Arguments\Jogo\AlterarJogoRequest.cs" />
-    <Compile Include="Arguments\Jogo\AlterarJogoResponse.cs" />
-    <Compile Include="Arguments\Jogo\ExcluirJogoResponse.cs" />
+    <Compile Include="Arguments\Jogo\JogoResponse.cs" />
+    <Compile Include="Arguments\Jogo\ExcluirJogoResquest.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaResponse.cs" />
     <Compile Include="Entities\Base\EntityBase.cs" />

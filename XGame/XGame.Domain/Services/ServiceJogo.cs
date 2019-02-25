@@ -1,6 +1,8 @@
 ﻿using prmToolkit.NotificationPattern;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using XGame.Domain.Arguments.Base;
 using XGame.Domain.Arguments.Jogo;
 using XGame.Domain.Entities;
 using XGame.Domain.Interface.Repositories;
@@ -44,19 +46,50 @@ namespace XGame.Domain.Services
             return (AdicionarJogoResponse)jogo;
         }
 
-        public AlterarJogoResponse AlterarJogo(AlterarJogoRequest request)
+        public ResponseBase AlterarJogo(AlterarJogoRequest request)
         {
-            throw new NotImplementedException();
+            if (request == null)
+            {
+                AddNotification("Alterar", "Dados são obrigatórios");
+            }
+            var jogo = _repositoryJogo.ObterPorId(request.ID);
+            if (request == null)
+            {
+                AddNotification("Alterar", "Jogo não encontrado");
+            }
+            jogo.AlterarJogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site);
+
+            AddNotifications(jogo);
+
+            if (this.IsInvalid())
+            {
+                return null;
+            }
+
+            jogo = _repositoryJogo.Editar(jogo);
+
+
+            return (ResponseBase)jogo;
         }
 
-        public ExcluirJogoResponse Excluir(Guid id)
+
+        public ResponseBase Excluir(Guid id)
         {
-            throw new NotImplementedException();
+            var jogo = _repositoryJogo.ObterPorId(id);
+            if (jogo == null)
+            {
+                AddNotification("Excluir", "Nehum jogo encontrado");
+            }
+
+            _repositoryJogo.Remover(jogo);
+
+
+            return new ResponseBase() { Message = "Jogo Excluido com sucesso" };
         }
 
-        public IEnumerable<AdicionarJogoResponse> ListarJogo()
+        IEnumerable<JogoResponse> IServiceJogo.ListarJogo()
         {
-            throw new NotImplementedException();
+            return _repositoryJogo.Listar().ToList().Select(jogo => (JogoResponse)jogo).ToList();
         }
     }
 }

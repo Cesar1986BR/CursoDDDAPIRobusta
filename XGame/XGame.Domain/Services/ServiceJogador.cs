@@ -60,7 +60,7 @@ namespace XGame.Domain.Services
 
             //  var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
             var email = new Email(request.Email);
-            var jogador = new Jogador(null, email, request.Senha);
+            var jogador = new Jogador(email, request.Senha);
 
             AddNotifications(jogador, email);
 
@@ -68,7 +68,7 @@ namespace XGame.Domain.Services
             if (jogador.IsInvalid())
                 return null;
 
-            jogador = _repositoryJogador.ObterPor(x => x.Email.EmailEndereco == jogador.Email.EmailEndereco, x=> x.Senha == jogador.Senha);
+            jogador = _repositoryJogador.ObterPor(x => x.Email.EmailEndereco == jogador.Email.EmailEndereco &&  x.Senha == jogador.Senha);
             return (AutenticarJogadorResponse)jogador;
         }
 
@@ -109,7 +109,7 @@ namespace XGame.Domain.Services
 
         public IEnumerable<JogadorResponse> ListaJogador()
         {
-            return _repositoryJogador.Listar().ToList().Select(jogador => (JogadorResponse)jogador).ToList(); ;
+            return _repositoryJogador.Listar().ToList().Select(jogador => (JogadorResponse)jogador).ToList(); 
         }
         public GetJogadorByIDResponse GetJogadorByID(GetJogadorByIDRequest request)
         {
@@ -118,7 +118,7 @@ namespace XGame.Domain.Services
             return (GetJogadorByIDResponse)jogador;
         }
 
-        public ReponseBase ExcluirJogador(Guid id)
+        public ResponseBase ExcluirJogador(Guid id)
         {
             Jogador jogador = _repositoryJogador.ObterPorId(id);
 
@@ -128,7 +128,7 @@ namespace XGame.Domain.Services
             }
             _repositoryJogador.Remover(jogador);
 
-            return new ReponseBase() {Message = "Jogador excluido com sucesso"  }; 
+            return new ResponseBase() {Message = "Jogador excluido com sucesso"  }; 
 
         }
     }

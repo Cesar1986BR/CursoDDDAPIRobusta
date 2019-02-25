@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XGame.Domain.Arguments.Base;
 using XGame.Domain.Arguments.Jogo;
 using XGame.Domain.Interface.Servico.Base;
 
@@ -11,12 +12,12 @@ namespace XGame.Domain.Services
     public interface  IServiceJogo : IServiceBase
     {
 
-        IEnumerable<AdicionarJogoResponse> ListarJogo();
+        IEnumerable<JogoResponse> ListarJogo();
 
         AdicionarJogoResponse AddJogo(AdicionarJogoRequest request);
 
-        AlterarJogoResponse AlterarJogo(AlterarJogoRequest request);
+        ResponseBase AlterarJogo(AlterarJogoRequest request);
 
-        ExcluirJogoResponse Excluir(Guid id);
+        ResponseBase Excluir(Guid id);
     }
 }

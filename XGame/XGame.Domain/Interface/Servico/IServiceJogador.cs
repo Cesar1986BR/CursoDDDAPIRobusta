@@ -13,7 +13,7 @@ namespace XGame.Domain.Interface.Servico
 
         AlterarResponse AlterarJogador(AlterarRequest request);
         IEnumerable<JogadorResponse> ListaJogador();
-        ReponseBase ExcluirJogador(Guid id);
+        ResponseBase ExcluirJogador(Guid id);
 
     }
 }

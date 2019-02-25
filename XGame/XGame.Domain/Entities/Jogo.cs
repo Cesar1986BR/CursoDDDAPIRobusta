@@ -21,11 +21,29 @@ namespace XGame.Domain.Entities
             Genero = genero;
             Site = site;
 
+            ValidaDados();
+          
+        }
 
+        public void  AlterarJogo(string nome, string descricao, string produtora, string distribuidora, string genero, string site)
+        {
+            Nome = nome;
+            Descricao = descricao;
+            Produtora = produtora;
+            Distribuidora = distribuidora;
+            Genero = genero;
+            Site = site;
+
+            ValidaDados();
+
+        }
+
+        private void ValidaDados()
+        {
             new AddNotifications<Jogo>(this)
-                .IfNullOrInvalidLength(x => x.Nome, 1, 100, "Nome obrigatório e deve ter no minimo 1 até 100 caracteres")
-                .IfNullOrInvalidLength(x => x.Descricao, 1, 255, "Descrição obrigatório e deve ter no minimo 1 até 255 caracteres")
-                .IfNullOrInvalidLength(x => x.Genero, 1, 30, "Genero obrigatório e deve ter no minimo 1 até 30 caracteres");
+              .IfNullOrInvalidLength(x => x.Nome, 1, 100, "Nome obrigatório e deve ter no minimo 1 até 100 caracteres")
+              .IfNullOrInvalidLength(x => x.Descricao, 1, 255, "Descrição obrigatório e deve ter no minimo 1 até 255 caracteres")
+              .IfNullOrInvalidLength(x => x.Genero, 1, 30, "Genero obrigatório e deve ter no minimo 1 até 30 caracteres");
         }
 
         public string Nome { get; private set; }

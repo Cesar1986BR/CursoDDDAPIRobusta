@@ -39,7 +39,7 @@ namespace XGame.Api.Controllers
         }
 
         [Route("Alterar")]
-        [HttpPost]
+        [HttpPut]
         public async Task<HttpResponseMessage> Alterar(AlterarJogoRequest request)
         {
             try
@@ -61,6 +61,23 @@ namespace XGame.Api.Controllers
             try
             {
                 var response = _serviceJogo.ListarJogo();
+
+                return await ResponseAsync(response, _serviceJogo);
+            }
+            catch (Exception ex)
+            {
+                return await ResponseExceptionAsync(ex);
+            }
+        }
+
+        [Authorize]
+        [Route("Excluir")]
+        [HttpDelete]
+        public async Task<HttpResponseMessage> Alterar(Guid id)
+        {
+            try
+            {
+                var response = _serviceJogo.Excluir(id);
 
                 return await ResponseAsync(response, _serviceJogo);
             }

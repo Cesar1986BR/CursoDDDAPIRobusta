@@ -7,7 +7,7 @@ namespace XGame.Domain.Interface.Servico
         public Guid ID { get; set; }
         public string PrimeiroNome { get; set; }
         public string UltimoNome { get; set; }
-        public string Mesage { get; set; }
+        public string Message { get; set; }
         public string Email { get; private set; }
 
         public static explicit operator AlterarResponse(Entities.Jogador jogador)
@@ -18,7 +18,7 @@ namespace XGame.Domain.Interface.Servico
                 PrimeiroNome = jogador.Nome.PrimeiroNome,
                 UltimoNome = jogador.Nome.UltimoNome,
                 Email = jogador.Email.EmailEndereco,
-                Mesage = "Jogador Alterado com sucesso."
+                Message = "Jogador Alterado com sucesso."
 
             };
 
