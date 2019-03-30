@@ -51,6 +51,22 @@ namespace XGame.Api.Controllers
             }
         }
 
+        [Route("Login")]
+        [HttpGet]
+        public async Task<HttpResponseMessage> Login(AutenticarJogadorRequest request)
+        {
+            try
+            {
+                var response = _serviceJogador.Autenticar(request);
+
+                return await ResponseAsync(response, _serviceJogador);
+            }
+            catch (Exception ex)
+            {
+                return await ResponseExceptionAsync(ex);
+            }
+        }
+
 
     }
 }

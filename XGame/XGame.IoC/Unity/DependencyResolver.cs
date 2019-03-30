@@ -27,7 +27,8 @@ namespace XGame.IoC.Unity
 
             container.RegisterType<IServiceJogador, ServiceJogador>(new HierarchicalLifetimeManager());
             container.RegisterType<IServiceJogo, ServiceJogo>(new HierarchicalLifetimeManager());
-            
+            container.RegisterType<IServicePlataforma, ServicePlataforma>(new HierarchicalLifetimeManager());
+
 
 
             //Repository
@@ -35,8 +36,10 @@ namespace XGame.IoC.Unity
 
             container.RegisterType<IRepositoryJogador, RepositoryJogador>(new HierarchicalLifetimeManager());
              container.RegisterType<IRepositoryJogo, RepositoryJogo>(new HierarchicalLifetimeManager());
-            
-            
+            container.RegisterType<IRepositoryPlataforma, RepositoryPlataforma>(new HierarchicalLifetimeManager());
+
+
+
 
         }
     }

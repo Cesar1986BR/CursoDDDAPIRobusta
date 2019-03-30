@@ -140,8 +140,14 @@
     <Compile Include="Arguments\Jogo\AlterarJogoRequest.cs" />
     <Compile Include="Arguments\Jogo\JogoResponse.cs" />
     <Compile Include="Arguments\Jogo\ExcluirJogoResquest.cs" />
+    <Compile Include="Arguments\Plataforma\ExcluirPlataformarequest.cs" />
+    <Compile Include="Arguments\Plataforma\GetPlataformaByIdRequest.cs" />
+    <Compile Include="Arguments\Plataforma\AlterarPlataformaResponse.cs" />
+    <Compile Include="Arguments\Plataforma\AlterarPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AddPlataformaResponse.cs" />
+    <Compile Include="Arguments\Plataforma\GetPlataformaByIdResponse.cs" />
+    <Compile Include="Arguments\Plataforma\PlataformaResponse.cs" />
     <Compile Include="Entities\Base\EntityBase.cs" />
     <Compile Include="Entities\Jogador.cs" />
     <Compile Include="Entities\Jogo.cs" />
@@ -157,6 +163,7 @@
     <Compile Include="Arguments\Jogador\AlterarRequest.cs" />
     <Compile Include="Arguments\Jogador\AlterarResponse.cs" />
     <Compile Include="Interface\Repositories\IRepositoryJogo.cs" />
+    <Compile Include="Interface\Repositories\IRepositoryPlataforma.cs" />
     <Compile Include="Interface\Servico\Base\IServicebase.cs" />
     <Compile Include="Interface\Servico\IServicePlataforma.cs" />
     <Compile Include="Interface\Servico\IServiceJogador.cs" />
@@ -164,6 +171,7 @@
     <Compile Include="Interface\Servico\IServiceJogo.cs" />
     <Compile Include="Services\ServiceJogo.cs" />
     <Compile Include="Services\ServiceJogador.cs" />
+    <Compile Include="Services\ServicePlataforma.cs" />
     <Compile Include="ValueObjects\Email.cs" />
     <Compile Include="ValueObjects\Nome.cs" />
   </ItemGroup>

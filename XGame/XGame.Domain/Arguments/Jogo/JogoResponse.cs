@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace XGame.Domain.Arguments.Jogo
+namespace XGame.Domain
 {
     public class JogoResponse
     {
@@ -21,9 +20,11 @@ namespace XGame.Domain.Arguments.Jogo
         public string Genero { get; set; }
 
         public string Site { get; set; }
+        public IEnumerable< Plataforma> Plataforma { get; set; }
 
         public static explicit operator JogoResponse(Entities.Jogo jogo)
         {
+
             return new JogoResponse
             {
                 ID = jogo.ID,
@@ -32,7 +33,8 @@ namespace XGame.Domain.Arguments.Jogo
                 Produtora = jogo.Produtora,
                 Distribuidora = jogo.Distribuidora,
                 Genero = jogo.Genero,
-                Site = jogo.Site
+                Site = jogo.Site,
+                Plataforma = new List<Plataforma>()
 
             };
         }

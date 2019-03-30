@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace XGame
 {
-    public class AddPlataformaResponse
+    public class AlterarPlataformaResponse
     {
         public Guid Id { get; set; }
-        public string  Nome { get; set; }
-        public string Message { get { return "Plataforma cadastrada com sucesso."; } }
+        public string Nome { get; set; }
 
-        public static explicit operator AddPlataformaResponse(Plataforma plataforma)
+        public static explicit operator AlterarPlataformaResponse(Plataforma plataforma)
         {
-            return new AddPlataformaResponse
+
+            return new AlterarPlataformaResponse
             {
                 Id = plataforma.ID,
                 Nome = plataforma.Nome
             };
-
         }
     }
 }

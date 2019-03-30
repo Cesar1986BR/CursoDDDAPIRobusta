@@ -31,7 +31,7 @@ namespace XGame.Domain.Services
                 AddNotification("Adicionar","Dados são obrigatórios");
             }
 
-            var jogo = new Jogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site);
+            var jogo = new Jogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site, request.Plataforma);
 
             AddNotifications(jogo);
 
@@ -53,7 +53,7 @@ namespace XGame.Domain.Services
                 AddNotification("Alterar", "Dados são obrigatórios");
             }
             var jogo = _repositoryJogo.ObterPorId(request.ID);
-            if (request == null)
+            if (jogo == null)
             {
                 AddNotification("Alterar", "Jogo não encontrado");
             }

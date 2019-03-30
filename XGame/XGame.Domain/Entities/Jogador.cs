@@ -53,7 +53,7 @@ namespace XGame.Domain.Entities
         public string Senha { get; private set; }
         public StatusJogador Status { get; private set; }
 
-
+        public MeusJogo MeusJogo { get; set; }
         public override string ToString()
         {
             return Nome.PrimeiroNome + " " + Nome.UltimoNome;

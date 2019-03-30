@@ -34,11 +34,9 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\bin\Debug\Microsoft.Owin.Securit
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\bin\Debug\en-US\prmToolkit.NotificationPattern.resources.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csprojAssemblyReference.cache
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.CriaTabelaJogador.resources
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.CriaTabePlataforma.resources
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.TabelaJogador.resources
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.GenerateResource.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.CoreCompileInputs.cache
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.CopyComplete
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.pdb
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.initial.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.GenerateResource.cache

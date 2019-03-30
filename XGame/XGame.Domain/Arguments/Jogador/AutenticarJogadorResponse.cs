@@ -12,6 +12,8 @@ namespace XGame.Domain.Arguments.Jogador
 
         public int Status { get; set; }
 
+        public string Message { get; set; }
+
         public static explicit operator AutenticarJogadorResponse(Entities.Jogador entidade)
         {
             return new AutenticarJogadorResponse()
@@ -19,7 +21,8 @@ namespace XGame.Domain.Arguments.Jogador
                 Id = entidade.ID,
                 Email = entidade.Email.EmailEndereco,
                 PrimeiroNome = entidade.Nome.PrimeiroNome,
-                Status = (int)entidade.Status
+                Status = (int)entidade.Status,
+                Message = "Seja bem vindo " + entidade.Nome.PrimeiroNome
             };
         }
     }

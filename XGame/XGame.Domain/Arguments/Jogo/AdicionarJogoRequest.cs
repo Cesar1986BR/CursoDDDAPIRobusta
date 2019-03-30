@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XGame.Domain.Arguments.Jogo
-{
+namespace XGame {
     public class AdicionarJogoRequest
     {
        
@@ -20,5 +19,7 @@ namespace XGame.Domain.Arguments.Jogo
         public string Genero { get; set; }
 
         public string Site { get; set; }
+
+        public List<Plataforma> Plataforma { get; set; }
     }
 }

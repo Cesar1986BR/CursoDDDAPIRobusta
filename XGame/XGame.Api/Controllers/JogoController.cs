@@ -1,11 +1,15 @@
-﻿using prmToolkit.NotificationPattern;
+﻿using Microsoft.Owin.Security.OAuth;
+using Microsoft.Practices.Unity;
+using prmToolkit.NotificationPattern;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using XGame.Api.Controllers.Base;
+using XGame.Api.Security;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Arguments.Jogo;
+using XGame.Domain.Entities;
 using XGame.Domain.Interface.Servico;
 using XGame.Domain.Services;
 using XGame.Infra2.Transaction;
@@ -16,10 +20,12 @@ namespace XGame.Api.Controllers
     public class JogoController : ControllerBase
     {
         private readonly IServiceJogo _serviceJogo;
+        private readonly UnityContainer _container;
 
-        public JogoController(IUnitOfWork unitOfWork,  IServiceJogo serviceJogo) : base(unitOfWork)
+        public JogoController(IUnitOfWork unitOfWork,  IServiceJogo serviceJogo, UnityContainer uityContainer) : base(unitOfWork)
         {
             _serviceJogo = serviceJogo;
+            _container = uityContainer;
         }
 
         [Route("Adicionar")]
@@ -73,8 +79,17 @@ namespace XGame.Api.Controllers
         [Authorize]
         [Route("Excluir")]
         [HttpDelete]
-        public async Task<HttpResponseMessage> Alterar(Guid id)
+        public async Task<HttpResponseMessage> Excluir(Guid id)
         {
+            //var jogador = new Jogador();
+            //jogador.Email.EmailEndereco = "cesarpower20@yahoo.com.br";
+
+
+            //("cesarpower20@yahoo.com.br", "10203040");
+            //var context = new OAuthGrantResourceOwnerCredentialsContext(jogador.ID, jogador.Nome.PrimeiroNome, jogador.Senha);
+
+            //var checkAuthorize = new AuthorizationProvider(_container);
+            //checkAuthorize.GrantResourceOwnerCredentials();
             try
             {
                 var response = _serviceJogo.Excluir(id);

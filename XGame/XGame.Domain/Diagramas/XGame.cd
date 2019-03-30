@@ -1,42 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="XGame.Domain.Entities.Jogador">
-    <Position X="4.25" Y="2" Width="1.5" />
+    <Position X="2" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEACAAgAAAAAAAAAAAACAAAAAAAAAgAAACAAA=</HashCode>
+      <HashCode>AAAAAAAEACgAAAAEAAAAAAAAACAAACAAAAAAAAEAAAA=</HashCode>
       <FileName>Entities\Jogador.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MeusJogo" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="XGame.Domain.Entities.Jogo">
-    <Position X="9" Y="2" Width="1.5" />
+    <Position X="7.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABgAAAAAAAAAIAAAAAQAAAAAAAAAEAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAABgCAAAAAAAAIAAAAAQAAAEAQAAAEAAgQ=</HashCode>
       <FileName>Entities\Jogo.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="XGame.Domain.Entities.JogoPlataforma">
-    <Position X="7.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAABAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Entities\JogoPlataforma.cs</FileName>
-    </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Jogo" />
       <Property Name="Plataforma" />
     </ShowAsAssociation>
   </Class>
   <Class Name="XGame.Domain.Entities.MeusJogo">
-    <Position X="4.75" Y="5" Width="1.5" />
+    <Position X="4.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgIEAAAAAAAAEAAAAAAAAAAAAAAEAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIUAAAAAAAAAAAAAAAACAAAAAAEAAAI=</HashCode>
       <FileName>Entities\MeusJogos.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="JogoPlataforma" />
+      <Property Name="Jogo" />
     </ShowAsAssociation>
   </Class>
   <Class Name="XGame.Domain.Entities.Plataforma">
-    <Position X="6.25" Y="2" Width="1.5" />
+    <Position X="10.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Entities\Plataforma.cs</FileName>
