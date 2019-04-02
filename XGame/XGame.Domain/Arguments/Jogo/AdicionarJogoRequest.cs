@@ -20,6 +20,8 @@ namespace XGame {
 
         public string Site { get; set; }
 
-        public List<Plataforma> Plataforma { get; set; }
+        public string Plataforma_ID { get; set; }
+
+        
     }
 }

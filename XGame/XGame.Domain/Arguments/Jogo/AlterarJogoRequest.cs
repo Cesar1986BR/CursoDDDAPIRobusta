@@ -20,6 +20,9 @@ namespace XGame.Domain.Arguments.Jogo
         public string Genero { get; set; }
 
         public string Site { get; set; }
+        public string Plataforma_ID { get; set; }
+
+  
 
     }
 }

@@ -12,16 +12,18 @@ namespace XGame.Domain.Services
     public class ServiceJogo : Notifiable, IServiceJogo
     {
         private readonly IRepositoryJogo _repositoryJogo;
-
+        private readonly IRepositoryPlataforma _repositoryPlataforma;
 
         public ServiceJogo()
         {
 
-        }   
+        }
 
-        public ServiceJogo(IRepositoryJogo repositoryJogo)
+        public ServiceJogo(IRepositoryJogo repositoryJogo, IRepositoryPlataforma repositoryPlataforma)
         {
             _repositoryJogo = repositoryJogo;
+           _repositoryPlataforma = repositoryPlataforma;
+            
         }
 
         public AdicionarJogoResponse AddJogo(AdicionarJogoRequest request)
@@ -31,7 +33,11 @@ namespace XGame.Domain.Services
                 AddNotification("Adicionar","Dados são obrigatórios");
             }
 
-            var jogo = new Jogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site, request.Plataforma);
+            var plataformaList =  _repositoryPlataforma.Listar().ToList().Select(p => (PlataformaResponse)p).ToList();
+            Guid idPlataforma = new Guid(request.Plataforma_ID);
+
+            var plataformaResult = plataformaList.Where(p => p.Id == idPlataforma).FirstOrDefault();
+            var jogo = new Jogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site, request.Plataforma_ID, plataformaResult.Nome);
 
             AddNotifications(jogo);
 
@@ -57,7 +63,13 @@ namespace XGame.Domain.Services
             {
                 AddNotification("Alterar", "Jogo não encontrado");
             }
-            jogo.AlterarJogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site);
+            var plataformaList = _repositoryPlataforma.Listar().ToList().Select(p => (PlataformaResponse)p).ToList();
+            Guid idPlataforma = new Guid(request.Plataforma_ID);
+
+            var plataformaResult = plataformaList.Where(p => p.Id == idPlataforma).FirstOrDefault();
+
+
+            jogo.AlterarJogo(request.Nome, request.Descricao, request.Produtora, request.Distribuidora, request.Genero, request.Site,request.Plataforma_ID, plataformaResult.Nome);
 
             AddNotifications(jogo);
 
@@ -89,6 +101,7 @@ namespace XGame.Domain.Services
 
         IEnumerable<JogoResponse> IServiceJogo.ListarJogo()
         {
+
             return _repositoryJogo.Listar().ToList().Select(jogo => (JogoResponse)jogo).ToList();
         }
     }

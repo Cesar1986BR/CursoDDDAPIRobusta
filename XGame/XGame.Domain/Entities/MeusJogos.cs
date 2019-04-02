@@ -1,17 +1,31 @@
-﻿using System;
+﻿using prmToolkit.NotificationPattern;
+using System;
 using XGame.Domain.Entities.Base;
 
-namespace XGame.Domain.Entities
+namespace XGame
 {
     public class MeusJogo :EntityBase
     {
 
-        public Guid ID_Jogador { get; set; }
+        public MeusJogo()
+        {
 
-        public Jogo Jogo { get; set; }
-        public bool Desejado { get; set; }
-        public bool Troca { get; set; }
-        public bool Vender { get; set; }
-        public DateTime DataDesejado { get; set; }
+        }
+        public MeusJogo(string idJogo,string idJogador)
+        {
+            ID_Jogador = idJogador;
+            ID_Jogo = idJogo;
+        }
+        public void  AlterarMeusJogo(string idJogo, string idJogador)
+        {
+            ID_Jogador = idJogador;
+            ID_Jogo = idJogo;
+        }
+        public string ID_Jogador { get; set; }
+
+        public string ID_Jogo { get; set; }
+        public DateTime DataDaCompra { get; set; }
+
+
     }
 }

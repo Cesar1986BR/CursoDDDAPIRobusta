@@ -3,27 +3,10 @@ namespace XGame.Infra2.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class inicial : DbMigration
     {
         public override void Up()
         {
-            CreateTable(
-                "dbo.Jogador",
-                c => new
-                    {
-                        ID = c.Guid(nullable: false),
-                        PrimeiroNome = c.String(nullable: false, maxLength: 50, unicode: false),
-                        UltimoNome = c.String(nullable: false, maxLength: 50, unicode: false),
-                        Email = c.String(nullable: false, maxLength: 200, unicode: false),
-                        Senha = c.String(nullable: false, maxLength: 100, unicode: false),
-                        Status = c.Int(nullable: false),
-                        MeusJogo_ID = c.Guid(),
-                    })
-                .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.MeusJogo", t => t.MeusJogo_ID)
-                .Index(t => t.Email, unique: true, name: "UK_JOGADOR_EMAIL")
-                .Index(t => t.MeusJogo_ID);
-            
             CreateTable(
                 "dbo.MeusJogo",
                 c => new
@@ -54,18 +37,12 @@ namespace XGame.Infra2.Migrations
                     })
                 .PrimaryKey(t => t.ID);
             
-            CreateTable(
-                "dbo.Plataforma",
-                c => new
-                    {
-                        ID = c.Guid(nullable: false),
-                        Nome = c.String(nullable: false, maxLength: 50, unicode: false),
-                        Jogo_ID = c.Guid(),
-                    })
-                .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Jogo", t => t.Jogo_ID)
-                .Index(t => t.Jogo_ID);
-            
+            AddColumn("dbo.Jogador", "MeusJogo_ID", c => c.Guid());
+            AddColumn("dbo.Plataforma", "Jogo_ID", c => c.Guid());
+            CreateIndex("dbo.Jogador", "MeusJogo_ID");
+            CreateIndex("dbo.Plataforma", "Jogo_ID");
+            AddForeignKey("dbo.Plataforma", "Jogo_ID", "dbo.Jogo", "ID");
+            AddForeignKey("dbo.Jogador", "MeusJogo_ID", "dbo.MeusJogo", "ID");
         }
         
         public override void Down()
@@ -76,11 +53,10 @@ namespace XGame.Infra2.Migrations
             DropIndex("dbo.Plataforma", new[] { "Jogo_ID" });
             DropIndex("dbo.MeusJogo", new[] { "Jogo_ID" });
             DropIndex("dbo.Jogador", new[] { "MeusJogo_ID" });
-            DropIndex("dbo.Jogador", "UK_JOGADOR_EMAIL");
-            DropTable("dbo.Plataforma");
+            DropColumn("dbo.Plataforma", "Jogo_ID");
+            DropColumn("dbo.Jogador", "MeusJogo_ID");
             DropTable("dbo.Jogo");
             DropTable("dbo.MeusJogo");
-            DropTable("dbo.Jogador");
         }
     }
 }

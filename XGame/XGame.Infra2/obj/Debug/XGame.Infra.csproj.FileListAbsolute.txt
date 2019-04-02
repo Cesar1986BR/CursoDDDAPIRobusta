@@ -38,5 +38,10 @@ C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.Cor
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.CopyComplete
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.dll
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.pdb
-C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.initial.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.inicial.resources
 C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra.csproj.GenerateResource.cache
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.atualizacao.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.osso.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.alt.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.atualizado.resources
+C:\GITHUB\CursoDDDAPIRobusta\XGame\XGame.Infra2\obj\Debug\XGame.Infra2.Migrations.atualizacao1.resources

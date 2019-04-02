@@ -7,13 +7,13 @@ namespace XGame.Infra2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class initial : IMigrationMetadata
+    public sealed partial class atualizacao : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(atualizacao));
         
         string IMigrationMetadata.Id
         {
-            get { return "201903300010197_initial"; }
+            get { return "201904011943532_atualizacao"; }
         }
         
         string IMigrationMetadata.Source

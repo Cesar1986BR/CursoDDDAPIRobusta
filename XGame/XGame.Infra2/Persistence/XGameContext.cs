@@ -15,6 +15,7 @@ namespace XGame.Infra2.Persistence
 
         public IDbSet<Jogador> Jogadores { get; set; }
         public IDbSet<Plataforma>Plataformas { get; set; }
+        public IDbSet<MeusJogo> MeusJogos { get; set; }
         public IDbSet<Jogo> Jogo { get; set; }
 
 

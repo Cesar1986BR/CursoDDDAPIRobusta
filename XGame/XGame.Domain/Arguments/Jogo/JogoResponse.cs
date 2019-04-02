@@ -20,7 +20,8 @@ namespace XGame.Domain
         public string Genero { get; set; }
 
         public string Site { get; set; }
-        public IEnumerable< Plataforma> Plataforma { get; set; }
+        public string Plataforma_ID { get; set; }
+        public string PlataformaNome { get; set; }
 
         public static explicit operator JogoResponse(Entities.Jogo jogo)
         {
@@ -34,8 +35,8 @@ namespace XGame.Domain
                 Distribuidora = jogo.Distribuidora,
                 Genero = jogo.Genero,
                 Site = jogo.Site,
-                Plataforma = new List<Plataforma>()
-
+                Plataforma_ID = jogo.Plataforma_ID,
+                PlataformaNome = jogo.PlataformaNome
             };
         }
 
